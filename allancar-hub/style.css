@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rampart+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+}
+h1{
+  font-family: 'Rampart One', cursive;
+
+}
+
+model-viewer {
+  --poster-color: #106feb;
+  --progress-bar-color: rgba(233, 126, 27, 0.5);
+  --progress-bar-height: 10px;
+}
+
+[data-color]::before {
+  content: "";
+  display: block;
+  position: absolute;
+  inset: -5px;
+  border: 2px solid transparent;
+  border-radius: 999px;
+}
+
+[data-color].active::before,
+[data-color]:focus::before {  
+  border-color: white;
+}
+
+p{
+  font-family: 'Kaushan Script', cursive;
+   
+}
+#from-kes {
+font-family: 'Handlee', cursive;
+}
+/* ul li{
+
+} */
+/*<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<model-viewer src="path/to/model.glb" />
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+<model-viewer src="https://images.unsplash.com/photo-1625231334168-35067f8853ed?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80" alt="A 3D model of a cube"></model-viewer> 
